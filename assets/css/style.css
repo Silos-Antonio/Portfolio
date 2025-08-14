@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #061024;
+    --cor-card: #0c2047;
+    --cor-card2: rgba(255, 255, 255, 0.219);
+    --cor-acento: #C8A23C;
+    --fonte-principal: 'Poppins', sans-serif;
+    --cor-fonte: rgb(201, 201, 201); 
+    --cor-fonte2: gray;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte);
+    line-height: 1.6;
+}
+
+.container-portfolio {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+aside {
+    width: 350px;
+    background-color: var(--cor-card);
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-top: 70px;
+    border: solid var(--cor-acento) 1px;
+    box-shadow: var(--cor-acento) 5px 5px 5px 0;
+}
+
+.nome {
+    font-size: 36px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: auto;
+    width: 150px;
+    border-radius: 10%;
+    margin-bottom: 20px; 
+}
+
+#cargo {
+    background-color: var(--cor-card2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sidebar-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding: 30px;
+}
+
+li {
+    padding: 20px;
+}
+
+.contato-item {
+    display: flex;
+}
+
+.contato-info {
+    margin-left: 15px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-titulo {
+    color: var(--cor-fonte2);
+}
+
+.link-contato {
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+
+
+i {
+    font-size: 1.5rem;
+    color: #C8A23C;
+    padding: 20px;
+    border: solid #C8A23C 1px;
+    border-radius: 25%;
+    box-shadow: #C8A23C 5px 5px 5px 0;
+}
+
+main {
+    background-color: var(--cor-card);
+    border-radius: 20px;
+}
+
+
