@@ -19,8 +19,6 @@ Clone este repositório para sua máquina local
 
 Abra o arquivo index.html em seu navegador de preferência.
 
-ou ou acesse o link: (link do github pages).
-
 Autor
 Antonio Silos
 
