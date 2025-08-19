@@ -21,10 +21,12 @@ body {
     line-height: 1.6;
 }
 
-.container-portfolio {
+.container-portifolio {
     display: flex;
     justify-content: center;
+    gap: 20px;
     height: 100vh;
+    margin-top: 70px;
 }
 
 aside {
@@ -32,14 +34,19 @@ aside {
     background-color: var(--cor-card);
     padding: 30px;
     border-radius: 20px;
-    margin-left: 70px;
-    margin-top: 70px;
-    border: solid var(--cor-acento) 1px;
     box-shadow: var(--cor-acento) 5px 5px 5px 0;
 }
 
 .nome {
-    font-size: 36px;
+    font-size: 40px;
+}
+
+.separador-aside {
+    width: 231.19px;
+    height: 2px;
+    background-color: var(--cor-acento);
+    margin-top: 15px;
+    border-radius: 2%;
 }
 
 figure {
@@ -58,12 +65,21 @@ img {
     background-color: var(--cor-card2);
     border-radius: 10px;
     padding: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar-info {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.cabecalho-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 ul {
@@ -99,16 +115,54 @@ li {
 
 i {
     font-size: 1.5rem;
-    color: #C8A23C;
+    color: var(--cor-acento);
     padding: 20px;
-    border: solid #C8A23C 1px;
+    border: solid var(--cor-acento) 1px;
     border-radius: 25%;
-    box-shadow: #C8A23C 5px 5px 5px 0;
+    box-shadow: var(--cor-acento) 5px 5px 5px 0;
 }
 
 main {
     background-color: var(--cor-card);
+    padding: 20px;
     border-radius: 20px;
+    box-shadow: var(--cor-acento) 5px 5px 5px 0;
+    width: 900px;
+    height: fit-content;
 }
 
+h2 {
+    font-size: 36px;
+}
+
+.separador-main {
+    width: 80px;
+    background-color: var(--cor-acento);
+    height: 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.sobre-intro {
+    margin-top: 20px;
+}
+
+.habilidades {
+    margin-top: 20px;
+}
+
+.habilidades-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.habilidades-item {
+    background-color: var(--cor-card2);
+    border-radius: 10px;
+}
+
+.habilidades-desc {
+    padding: 20px;
+}
 
