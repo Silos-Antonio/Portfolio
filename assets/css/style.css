@@ -212,5 +212,18 @@ h2 {
     overflow-x:scroll;
 }
 
+.ferramentas-lista::-webkit-scrollbar { 
+    border-radius: 10px;  
+}
+
+.ferramentas-lista::-webkit-scrollbar-track {
+    background-color: var(--cor-card2);
+    border-radius: 10px;
+}
+
+.ferramentas-lista::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--cor-acento);
+}
 
 
