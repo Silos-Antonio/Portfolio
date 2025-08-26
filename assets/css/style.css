@@ -43,7 +43,7 @@ aside {
     padding: 30px;
     border-radius: 20px;
     box-shadow: var(--cor-acento) 5px 5px 5px 0;
-    border: 1px solid var(--vegas-gold)
+    border: 1px solid var(--vegas-gold);
 }
 
 .nome {
@@ -226,4 +226,58 @@ h2 {
     background-color: var(--cor-acento);
 }
 
+.exp-icone {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--cor-acento) 5px 5px 5px 0;
+    border-radius: 10px;
+    border: solid 1px var(--cor-acento);
 
+}
+
+.exp-cabecalho {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.exp-cabecalho h3 {
+    display: flex;
+    align-items:end
+}
+
+.lista-xp {
+    list-style: circle;
+}
+
+.descricao-xp {
+    margin-top: 15px;
+}
+
+.formacao-cabecalho {
+    display: flex;
+    gap: 20px;
+}
+
+.formacao-cabecalho h3 {
+    display: flex;
+    align-items: end;
+}
+
+.formacao-icone {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--cor-acento) 5px 5px 5px 0;
+    border-radius: 10px;
+    border: solid 1px var(--cor-acento);
+}
+
+.lista-formacao {
+    list-style: circle;
+}
