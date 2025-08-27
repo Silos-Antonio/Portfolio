@@ -32,8 +32,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 100vh;
-    margin-top: 70px;
+    height: 100vh
 }
 
 aside {
@@ -280,4 +279,59 @@ h2 {
 
 .lista-formacao {
     list-style: circle;
+}
+
+.certificacoes-cabecalho {
+    display: flex;
+    gap: 20px;
+}
+
+.certificoes-icone {
+    height: 50px;
+    width: 50px;
+    border: solid 1px var(--cor-acento);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: var(--cor-acento) 5px 5px 5px 0;
+}
+
+.certificacoes-cabecalho h3 {
+    display: flex;
+    align-items: end;
+}
+
+.lista-certificacoes {
+    width:auto;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.imagem-certificado {
+    width: 400px;
+    height: 300px;
+    box-shadow: #000000 10px 10px 5px 0;
+}
+
+.certificado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista-certificacoes::-webkit-scrollbar {
+    border-radius: 10px;
+}
+
+.lista-certificacoes::-webkit-scrollbar-track {
+    background-color: var(--cor-card2);
+    border-radius: 10px;
+}
+
+.lista-certificacoes::-webkit-scrollbar-thumb {
+    background-color: var(--cor-acento);
+    border-radius: 10px;
 }
