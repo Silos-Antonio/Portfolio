@@ -42,7 +42,7 @@ aside {
     padding: 30px;
     border-radius: 20px;
     box-shadow: var(--cor-acento) 5px 5px 5px 0;
-    border: 1px solid var(--vegas-gold);
+    
 }
 
 .nome {
@@ -145,7 +145,6 @@ main {
     box-shadow: var(--cor-acento) 5px 5px 5px 0;
     width: 900px;
     height: fit-content;
-    border: 1px solid var(--vegas-gold)
 }
 
 h2 {
@@ -334,4 +333,57 @@ h2 {
 .lista-certificacoes::-webkit-scrollbar-thumb {
     background-color: var(--cor-acento);
     border-radius: 10px;
+}
+
+.lista-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: scroll;
+}
+
+.lista-projetos::-webkit-scrollbar {
+    background-color: var(--cor-card2);
+    border-radius: 10px;
+}
+
+.lista-projetos::-webkit-scrollbar-thumb {
+    background-color: var(--cor-acento);
+    border-radius: 10px;
+}
+
+.card-projeto {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    padding: 15px;
+    background-color: var(--cor-card2);
+}
+
+#projeto-1 {
+    background-image: url("/assets/images/projeto-netflix.png");
+    background-size: contain;
+}
+
+.descricao-projeto {
+    color:var(--vegas-gold);
+    background-color: var(--onyx);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tecnologias {
+    background-color: var(--onyx);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card-projeto::-webkit-scrollbar {
+    background-color: var(--cor-card2);
+    border-radius: 10px;
+    width: 5px;
+}
+
+.card-projeto::-webkit-scrollbar-thumb {
+    background-color: var(--cor-acento);
 }
