@@ -7,10 +7,14 @@
     <title>Antonio Silos - Portfólio Profissional</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css" />
+    <link rel="icon" href="/assets/images/favicon_64.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container-portifolio">
+
+    
+
+    <div class="container-portfolio">
         <aside>
             <div class="sidebar-info">
 
@@ -62,7 +66,26 @@
 
         <main>
 
-            <article class="sobre">
+           <nav class="barra-navegacao">
+                    <ul class="lista-navegacao">
+                        <li class="item-navegacao">
+                            <a href="#sobre-mim" data-target="sobre-mim">Sobre Mim</a>
+                        </li>
+                        <li class="item-navegacao">
+                            <a href="#curriculo" data-target="curriculo">Currículo</a>
+                        </li>
+                        <li class="item-navegacao">
+                            <a href="#projetos" data-target="projetos">Projetos</a>
+                        </li>
+                        <li class="item-navegacao">
+                            <a href="#contato" data-target="contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            <div class="conteudo-principal">
+
+                <article class="sobre" id="sobre-mim">
 
                 <section class="sobre-mim">
                     <h2>Sobre Mim</h2>
@@ -167,7 +190,7 @@
 
             </article>
 
-            <article class="curriculo">
+            <article class="curriculo" id="curriculo">
                 <h2 class="titulo-curriculo">Currículo</h2>
                 <div class="separador-main"></div>
                 <section class="experiencia">
@@ -315,13 +338,14 @@
 
             </article>
 
-            <article class="projetos">
+            <article class="projetos" id="projetos">
                 <h2>Meus Projetos</h2>
                 <div class="separador-main"></div>
                 <ul class="lista-projetos">
                     <li class="projeto">
-                        <h3 class="titulo-projeto">Página de login da Netflix personalizada</h3>
+                        
                         <div class="card-projeto" id="projeto-1">
+                            <h3 class="titulo-projeto">Página de login da Netflix personalizada</h3>
                             <img src="" class="capa-card" alt="">
                             <p class="descricao-projeto">Tela de login da Netflix repaginada para trazer um conceito de UI
                             diferenciado. Projeto Fullstack com criação de um layout aprimorado com integração com banco
@@ -333,8 +357,9 @@
                         
                     </li>
                     <li class="projeto">
-                        <h3 class="titulo-projeto">Página de feliz aniversário com quiz inicial</h3>
-                        <div class="card-projeto">
+                        
+                        <div class="card-projeto" id="projeto-2">
+                            <h3 class="titulo-projeto">Página de feliz aniversário com quiz inicial</h3>
                             <p class="descricao-projeto">Página Web que desenvolvi para homenagear o minha esposa em seu
                             aniversário. É responsiva e contém um quiz inicial que ao final irá direcionar para a página
                             da homenagem. Foi meu primeiro projeto utilizando mais de uma página.</p>
@@ -345,8 +370,8 @@
                         
                     </li>
                     <li class="projeto">
+                        <div class="card-projeto" id="projeto-3">
                         <h3 class="titulo-projeto">Projeto Python + Previsão com I.A</h3>
-                        <div class="card-projeto">
                             <p class="descricao-projeto">Projeto de backend no qual trabalhei com as bilbiotecas Pandas e
                             Scikit-learn. O projeto envolveu tratamento de dados que são analisados por um modelo de IA
                             treinado para fornecer previsões de perfil de crédito para novos cliente.
@@ -358,8 +383,9 @@
                     </li>
 
                     <li class="projeto">
-                        <h3 class="titulo-projeto">Jogo em 2D usando Pygame</h3>
-                        <div class="card-projeto">
+                        
+                        <div class="card-projeto" id="projeto-4">
+                            <h3 class="titulo-projeto">Jogo em 2D usando Pygame</h3>
                             <p class="descricao-projeto">Um desafio que eu impuz a mim mesmo unindo minha paixão por game e
                             o interesse em aprender mais sobre POO (Programação Orientada a Objetos). Com ele aprendi
                             sobre a biblioteca Pygame, a forma correta de usar Classes e até sobre animação de sprites.
@@ -374,28 +400,37 @@
                 </ul>
             </article>
 
-            <article class="contato">
-                <h2>Meu contato</h2>
+            <article class="contato" id="contato">
+                <h2>Entre em contato</h2>
+                <div class="separador-main"></div>
 
                 <form action="" method="">
-                    <label for="nome-contato"></label>
-                    <input type="text" id="nome-contato" placeholder="Insira seu nome">
 
-                    <label for="email-contato"></label>
-                    <input type="email" id="email-contato" placeholder="Insira seu e-mail">
+                    <h3>Me diga o que achou do meu portfólio! Seu feedback é bem vindo!</h3>
+                    <div class="dados-contato">
+                        <label for="nome-contato"></label>
+                        <input type="text" id="nome-contato" placeholder="Insira seu nome">
+                        <label for="email-contato"></label>
+                        <input type="email" id="email-contato" placeholder="Insira seu e-mail">
+                    </div>
 
-                    <label for="campo-mensagem">Me diga o que achou do meu portfólio! Seu feedback é muito bem
-                        vindo!</label>
-                    <textarea name="mensagem" id="campo-mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <div class="area-texto"> 
+                        <textarea name="mensagem" id="campo-mensagem" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="botao-email">Enviar e-mail</button>
 
-                    <button type="submit">Enviar e-mail</button>
                 </form>
 
                 <iframe src="" frameborder="0"></iframe>
             </article>
+            </div>
+
+            
 
         </main>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
