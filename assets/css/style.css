@@ -464,26 +464,26 @@ h2 {
 }
 
 #projeto-1 {
-    background-image: url("assets/images/projeto-netflix.png");
+    background-image: url("../images/projeto-netflix.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #projeto-2 {
-    background-image: url("assets/images/projeto-homenagem.png");
+    background-image: url("../images/projeto-homenagem.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #projeto-3 {
-    background-image: url("assets/images/projeto-analise.png");
+    background-image: url("../images/projeto-analise.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #projeto-4 {
-    background-image: url("assets/images/projeto-jogo.png");
+    background-image: url("../images/projeto-jogo.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
