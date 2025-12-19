@@ -23,5 +23,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    const headers = document.querySelectorAll('.cabecalho-card');
+    
+    
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            
+            const parentCard = header.closest('.habilidades-conteudo');
+            
+            const descriptionContainer = parentCard.querySelector('.habilidades-desc-conteudo');
+            
+            const icon = header.querySelector('.ph-caret-down');
+            
+            descriptionContainer.classList.toggle('expandido');
+            
+            icon.classList.toggle('rotacionar-icone');
+        });
+    });
 });
 

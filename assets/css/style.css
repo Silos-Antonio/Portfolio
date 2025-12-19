@@ -40,7 +40,7 @@ body {
 
 aside {
     width: 350px;
-    height: auto;
+    height: fit-content;
     background-color: var(--cor-card);
     padding: 30px;
     border-radius: 20px;
@@ -146,7 +146,7 @@ main {
     border-radius: 20px;
     box-shadow: var(--cor-acento) 5px 5px 5px 0;
     width: 900px;
-    height:fit-content;
+    height: fit-content;
 }
 
 h2 {
@@ -207,33 +207,74 @@ h2 {
     margin-top: 20px;
 }
 
+.habilidades-desc-conteudo {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-heigth 0.6s ease-out, padding 0.2s ease-out;
+    padding: 0;
+
+}
+
+.botao-expansao {
+    background-color: var(--cor-card2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    border-radius: 10px;
+    gap: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: all 0.5s ease;
+}
+
+.expandido {
+    max-height: 2000px;
+    padding: 0px;
+}
+
+.habilidades-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .habilidades-lista {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    padding: 0px;
 }
 
 .habilidades-item {
     position: relative;
     background-color: var(--cor-card2);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .habilidades-icone {
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
     opacity: 0.5;
-    top: 0;
-    left: 0;
+    top: 15px;
+    right: 15px;
 }
 
 .habilidades-icone i {
-    font-size: 16rem;
+    font-size: 4rem;
 }
 
 .habilidades-conteudo {
@@ -242,6 +283,7 @@ h2 {
 
 .habilidades-desc {
     padding: 20px;
+    font-weight: bold;
 }
 
 .ferramentas-lista {
@@ -390,12 +432,35 @@ h2 {
 }
 
 .card-projeto {
+    position: relative;
     width: 340px;
     height: 170px;
     border-radius: 10px;
-    overflow-y: scroll;
-    padding: 15px;
+    overflow: hidden;
+    padding: 5px;
     background-color: var(--cor-card2);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight:bolder;
+    color: var(--cor-acento);
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-out;
+}
+
+.card-projeto:hover .card-overlay {
+    transform: translateY(0);
 }
 
 #projeto-1 {
@@ -425,29 +490,29 @@ h2 {
 
 
 .descricao-projeto {
-    color:var(--vegas-gold);
+    /*color:var(--vegas-gold);
     background-color: var(--onyx);
     border-radius: 10px;
-    padding: 5px;
+    padding: 5px;*/
 }
 
 .tecnologias {
-    background-color: var(--onyx);
+    /*background-color: var(--onyx);
     border-radius: 10px;
-    padding: 5px;
-}
+    padding: 5px;*/
+}   
 
-.card-projeto::-webkit-scrollbar {
+.card-overlay::-webkit-scrollbar {
     background-color: var(--cor-card2);
     border-radius: 10px;
     width: 5px;
 }
 
-.card-projeto::-webkit-scrollbar-thumb {
+.card-overlay::-webkit-scrollbar-thumb {
     background-color: var(--cor-acento);
 }
 
-.card-projeto::-webkit-scrollbar-thumb:hover {
+.card-overlay::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
 }
 
@@ -503,7 +568,7 @@ form textarea {
     padding: 10px
 }
  
-button {
+.botao-email {
     margin-top: 30px;
     padding: 17px 40px;
     border-radius: 10px;
@@ -526,9 +591,9 @@ button:hover {
 
 button:active {
     letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
+    background-color: var(--cor-card);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    box-shadow: var(--cor-card) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
     }
