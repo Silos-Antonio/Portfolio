@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     const navLink = document.querySelectorAll('nav ul li a');
     const allArticles = document.querySelectorAll('main article');
@@ -42,34 +41,30 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.classList.toggle('rotacionar-icone');
         });
     });
-});
 
-=======
-document.addEventListener('DOMContentLoaded', function() {
-    const navLink = document.querySelectorAll('nav ul li a');
-    const allArticles = document.querySelectorAll('main article');
+    // Menu Hambúrguer
+    const btnMenu = document.getElementById('botao-menu'); // Corrigido para 'botao-menu'
+    const listNav = document.querySelector('.lista-navegacao');
 
-    allArticles.forEach ((article, index) => {
-        if (index !== 0) {
-            article.classList.add('oculto');
-        }
-    });
+    if (btnMenu && listNav) {
+        btnMenu.addEventListener('click', () => {
+            listNav.classList.toggle('ativo');
+        });
+    }
 
+    // Fechar menu ao clicar em um link (Melhoria de UX)
     navLink.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-
-            const targetId = this.getAttribute('href');
-            allArticles.forEach(article => {
-                article.classList.add('oculto');
-            });
-
-            const targetArticle = document.querySelector(targetId);
-            if (targetArticle) {
-                targetArticle.classList.remove('oculto');
-            }
+        link.addEventListener('click', () => {
+            listNav.classList.remove('ativo');
         });
     });
-});
 
->>>>>>> bde066b550b1d9bb185c977be35ccc6afc385e68
+    //Expandir Contatos no Aside 
+    const btnContatos = document.getElementById('toggle-contatos');
+    const listaContatos = document.getElementById('lista-contato');
+
+    btnContatos.addEventListener('click', () => {
+        listaContatos.classList.toggle('ativo');
+        btnContatos.querySelector('i').classList.toggle('rotacionar-icone');
+    });
+});

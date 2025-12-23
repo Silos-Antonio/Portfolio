@@ -390,9 +390,11 @@ h2 {
 .lista-certificacoes {
     width:auto;
     display: flex;
-    overflow-x: scroll;
-    margin-bottom: 20px;
-    gap: 20px;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .imagem-certificado {
@@ -428,7 +430,10 @@ h2 {
 
 .lista-projetos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
 }
 
 .card-projeto {
@@ -598,4 +603,126 @@ button:active {
     transition: 100ms;
     }
 
+.botao-contato-mobile {
+    display: none;
+}
 
+@media screen and (max-width: 850px) {
+    .container-portfolio {
+        flex-direction: column;
+        padding: 10px; 
+        margin: 0;
+    }
+
+    aside {
+        width: 100%;
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-info {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    aside img {
+        width: 80px;
+        margin-bottom: 0;
+    }
+
+    .nome {font-size: 24px; }
+    .separador-aside { display: none; }
+
+    #lista-contato {
+        display: none;
+        width: 100%;
+        padding: 10px 0; 
+    }
+
+    #lista-contato.ativo {
+        display: block !important;
+    }
+
+    .botao-contato-mobile {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: 1px solid var(--cor-acento);
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .barra-navegacao {
+        width: 100%;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .menu-hamburguer {
+        display: block;
+        background:none;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .lista-navegacao {
+        display: none;
+        flex-direction: column;
+        background-color: var(--cor-card);
+        width: 100%;
+        padding: 20px;
+    }
+
+    .lista-navegacao.ativo {
+        display: flex !important;
+    }
+
+    main {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .lista-projetos {
+        grid-template-columns: 1ft;
+        justify-items: center;
+    }
+
+    form textarea {
+    width: 100%;
+    }
+
+    .dados-contato {
+        flex-direction: column;
+    }
+
+    .dados-contato input {
+        width: 100%;
+    }
+
+    .lista-projetos {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .card-projeto {
+        width: 100%;
+        max-width: 380px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .botao-contatos-mobile, .menu-hamburguer {
+        display: none;
+    }
+}
