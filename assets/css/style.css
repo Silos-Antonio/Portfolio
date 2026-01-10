@@ -755,19 +755,23 @@ button:active {
     }
 
     .btn-descricao-xp {
-        width:auto;
-        letter-spacing: 3px;
-        background-color:var(--cor-card2);
-        color: hsl(0, 0%, 100%);
-        box-shadow: var(--cor-fundo) 0px 7px 29px 0px;
-        top: 20px;
-        right: 20px;
+        background-color: var(--cor-card2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 130px;
         margin-top: 10px;
-        background: var(--cor-card2);
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: 10px;
+        gap: 10px;
+        border: 0;
         cursor: pointer;
-        display: block;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        padding: 5px;
+        font-size: 10px;
+        transition: all 0.5s ease;
     }
 
     .descricao-certificado {
@@ -775,19 +779,23 @@ button:active {
     }
 
     .btn-descricao-cert {
-        width:auto;
-        letter-spacing: 3px;
-        background-color:var(--cor-card2);
-        color: hsl(0, 0%, 100%);
-        box-shadow: var(--cor-fundo) 0px 7px 29px 0px;
-        top: 20px;
-        right: 20px;
+        background-color: var(--cor-card2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 130px;
         margin-top: 10px;
-        background: var(--cor-card2);
-        border-radius: 5px;
-        padding: 5px;
+        border-radius: 10px;
+        gap: 10px;
+        border: 0;
         cursor: pointer;
-        display: block;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        padding: 5px;
+        font-size: 10px;
+        transition: all 0.5s ease;
     }
 }
 
