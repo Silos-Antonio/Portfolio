@@ -12,15 +12,14 @@ CSS: Estilização e responsividade da página.
 Javascript: Interações e funcionalidades da página. 
 
 Status do Projeto
-Em desenvolvimento 🚧
+Concluído, mas em constante melhoria.
 
 Como Visualizar
-Clone este repositório para sua máquina local 
-
-Abra o arquivo index.html em seu navegador de preferência.
+Acesse o link: https://silos-antonio.github.io/Portfolio/
 
 Autor
 Antonio Silos
 
 LinkedIn: linkedin.com/in/antonio-silos-415b64175
 Github: https://github.com/Silos-Antonio
+
