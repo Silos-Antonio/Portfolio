@@ -330,6 +330,7 @@ h2 {
 
 .exp-cabecalho h3 {
     display: flex;
+    flex-direction: column;
     align-items:end
 }
 
@@ -364,6 +365,16 @@ h2 {
 
 .lista-formacao {
     list-style: circle;
+}
+
+.item-formacao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.data-formacao {
+    font-weight: bold;
 }
 
 .certificacoes-cabecalho {
@@ -493,20 +504,6 @@ h2 {
     background-repeat: no-repeat;
 }
 
-
-.descricao-projeto {
-    /*color:var(--vegas-gold);
-    background-color: var(--onyx);
-    border-radius: 10px;
-    padding: 5px;*/
-}
-
-.tecnologias {
-    /*background-color: var(--onyx);
-    border-radius: 10px;
-    padding: 5px;*/
-}   
-
 .card-overlay::-webkit-scrollbar {
     background-color: var(--cor-card2);
     border-radius: 10px;
@@ -589,7 +586,7 @@ form textarea {
 
 button:hover {
     letter-spacing: 3px;
-    background-color:var(--cor-acento);
+    background-color:var(--cor-card2);
     color: hsl(0, 0%, 100%);
     box-shadow: var(--cor-fundo) 0px 7px 29px 0px;
     }
@@ -630,7 +627,7 @@ button:active {
     }
 
     .conteudo-principal {
-        padding: 15px 10px;
+        padding: 10px 10px;
     }
 
     .habilidades-lista {
@@ -724,7 +721,7 @@ button:active {
         width: 100%;
         margin-top: 20px;
     }
-    
+
     .lista-projetos {
         grid-template-columns: 1ft;
         justify-items: center;
@@ -752,10 +749,50 @@ button:active {
         max-width: 380px;
         height: 200px;
     }
+
+    .descricao-xp {
+        display: none;
+    }
+
+    .btn-descricao-xp {
+        width:auto;
+        letter-spacing: 3px;
+        background-color:var(--cor-card2);
+        color: hsl(0, 0%, 100%);
+        box-shadow: var(--cor-fundo) 0px 7px 29px 0px;
+        top: 20px;
+        right: 20px;
+        margin-top: 10px;
+        background: var(--cor-card2);
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .descricao-certificado {
+        display: none;
+    }
+
+    .btn-descricao-cert {
+        width:auto;
+        letter-spacing: 3px;
+        background-color:var(--cor-card2);
+        color: hsl(0, 0%, 100%);
+        box-shadow: var(--cor-fundo) 0px 7px 29px 0px;
+        top: 20px;
+        right: 20px;
+        margin-top: 10px;
+        background: var(--cor-card2);
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        display: block;
+    }
 }
 
 @media screen and (min-width: 851px) {
-    .botao-contatos-mobile, .menu-hamburguer {
+    .botao-contatos-mobile, .menu-hamburguer, .btn-descricao-xp, .btn-descricao-cert {
         display: none;
     }
 }

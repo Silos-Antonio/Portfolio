@@ -40,6 +40,40 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Lógica expansão botão descrição experiência
+    const botoesXP = document.querySelectorAll('.btn-descricao-xp');
+
+    botoesXP.forEach(botao => {
+        botao.addEventListener('click', function() {
+            const descricao = this.nextElementSibling;
+            
+            if (descricao.style.display === 'block') {
+                descricao.style.display = 'none';
+                this.textContent = 'Mais informações';
+            } else {
+                descricao.style.display = 'block';
+                this.textContent = 'Ocultar informações';
+            }
+        });
+    });
+
+    // Lógica expansão botão descrição experiência
+    const botoesDesc = document.querySelectorAll('.btn-descricao-cert');
+
+    botoesDesc.forEach(botao => {
+        botao.addEventListener('click', function() {
+            const descricao = this.nextElementSibling;
+            
+            if (descricao.style.display === 'block') {
+                descricao.style.display = 'none';
+                this.textContent = 'Ver detalhes';
+            } else {
+                descricao.style.display = 'block';
+                this.textContent = 'Ocultar detalhes';
+            }
+        });
+    });
+
     // Menu Hambúrguer
     const btnMenu = document.getElementById('botao-menu'); // Corrigido para 'botao-menu'
     const listNav = document.querySelector('.lista-navegacao');
