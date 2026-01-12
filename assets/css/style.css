@@ -453,8 +453,29 @@ h2 {
     height: 170px;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: #000000 10px 5px 5px 0;
     padding: 5px;
     background-color: var(--cor-card2);
+}
+
+.btn-descricao-proj {
+    background-color: var(--cor-card2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 130px;
+    margin-top: 10px;
+    border-radius: 10px;
+    gap: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    padding: 5px;
+    font-size: 10px;
+    transition: all 0.5s ease;
 }
 
 .card-overlay {
@@ -463,20 +484,22 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-weight:bolder;
-    color: var(--cor-acento);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--cor-fonte);
     overflow-y: auto;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    transform: translateY(100%);
-    transition: transform 0.4s ease-out;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out; 
+    z-index: 5;
+    pointer-events: none;
 }
 
-.card-projeto:hover .card-overlay {
-    transform: translateY(0);
+.card-overlay.ativo {
+   transform: translateX(0);
+    pointer-events: auto; /* Reativa os cliques quando visível */
 }
 
 #projeto-1 {
