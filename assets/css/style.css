@@ -780,8 +780,9 @@ button:active {
 
     .link-redes {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
     }
+
 
     .barra-navegacao {
         width: 100%;
