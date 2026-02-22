@@ -12,10 +12,10 @@ CSS: Estilização e responsividade da página.
 Javascript: Interações e funcionalidades da página. 
 
 Status do Projeto
-Concluído, mas em constante melhoria.
+Concluído e em constante melhoria.
 
 Como Visualizar
-Acesse o link: PROJETO EM MIGRAÇÃO. 
+Acesse o link: https://antoniosnportifolio.netlify.app/
 
 Autor
 Antonio Silos
