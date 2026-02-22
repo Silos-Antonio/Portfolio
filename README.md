@@ -1,26 +1,105 @@
-# Portfolio
-Projeto de portfólio pessoal, desenvolvido com HTML semântico e CSS moderno. Este repositório documenta minha jornada como Desenvolvedor Júnior, aplicando as melhores práticas de desenvolvimento web para criar uma vitrine de projetos e habilidades de forma responsiva e elegante
+# 🌐 Portfólio Pessoal — Antonio Silos
 
-Portfólio Pessoal - Desenvolvedor Júnior
-Este projeto é o meu portfólio pessoal, construído para demonstrar minhas habilidades em desenvolvimento web e servir como uma vitrine para meus projetos e experiências.
+🇧🇷 Português | 🇫🇷 [Français](README.fr.md)
 
-Tecnologias Utilizadas
-HTML: Estrutura semântica do documento.
+## 📌 Sobre o Projeto
 
-CSS: Estilização e responsividade da página.
+Este projeto é meu portfólio pessoal, desenvolvido com foco em organização, performance e boas práticas de desenvolvimento front-end.
 
-Javascript: Interações e funcionalidades da página. 
+Mais do que uma vitrine de projetos, ele representa minha evolução como desenvolvedor e meu compromisso com código limpo, estrutura semântica e experiência do usuário.
 
-Status do Projeto
-Concluído e em constante melhoria.
+O objetivo foi criar uma interface moderna, responsiva e profissional para apresentar:
 
-Como Visualizar
-Acesse o link: https://antoniosnportifolio.netlify.app/
+- Projetos desenvolvidos
+- Habilidades técnicas
+- Experiências
+- Informações de contato
 
-Autor
-Antonio Silos
+---
 
-LinkedIn: linkedin.com/in/antonio-silos-415b64175
-Github: https://github.com/Silos-Antonio
+## 🚀 Tecnologias Utilizadas
 
+- **HTML5** → Estrutura semântica e acessível
+- **CSS3** → Estilização moderna e responsividade
+- **JavaScript** → Interações e dinamismo da interface
 
+---
+
+## 🎯 Principais Conceitos Aplicados
+
+✔️ HTML semântico  
+✔️ Layout responsivo (Mobile First)  
+✔️ Flexbox e organização estrutural  
+✔️ Separação clara de responsabilidades (HTML / CSS / JS)  
+✔️ Boas práticas de organização de código  
+✔️ Experiência do usuário (UX básica)
+
+---
+
+## 📱 Responsividade
+
+O layout foi desenvolvido para se adaptar a diferentes tamanhos de tela:
+
+- 📱 Mobile
+- 💻 Desktop
+- 🖥️ Telas maiores
+
+A responsividade foi implementada utilizando media queries e boas práticas de CSS moderno.
+
+---
+
+## 🌍 Visualização Online
+
+Você pode acessar o projeto em:
+
+🔗 **https://antoniosnportifolio.netlify.app/**
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+📁 PORTFOLIO
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/
+│   └── js/
+│
+├── google450156a250680164.html
+├── index.html
+├── LICENSE
+└── README.md
+```
+```
+
+---
+
+## 🔄 Status do Projeto
+
+✅ Concluído  
+🔄 Em constante evolução  
+
+Este portfólio é atualizado à medida que desenvolvo novos projetos e aprimoro minhas habilidades.
+
+---
+
+## 💡 Objetivo Profissional
+
+Este projeto representa minha transição para a área de tecnologia e meu compromisso com aprendizado contínuo.
+
+Estou em constante evolução nas áreas de:
+
+- Desenvolvimento Front-End
+- Dados e Inteligência Artificial
+- Construção de soluções digitais orientadas a valor
+
+---
+
+## 👨‍💻 Autor
+
+**Antonio Silos**
+
+🔗 LinkedIn: https://linkedin.com/in/antonio-silos-415b64175  
+🔗 GitHub: https://github.com/Silos-Antonio
