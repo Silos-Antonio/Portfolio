@@ -401,17 +401,30 @@ h2 {
 .lista-certificacoes {
     width:auto;
     display: flex;
+    overflow: hidden;
     overflow-x: auto;
     gap: 1.5rem;
     padding: 1rem 0.5rem;
     scroll-behavior: smooth;
+    cursor: grab;
     -webkit-overflow-scrolling: touch;
+    user-select: none;
+}
+
+.lista-certificacoes:active {
+    cursor: grabbing;
 }
 
 .imagem-certificado {
     width: 300px;
     height: 200px;
     box-shadow: #000000 10px 10px 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.imagem-certificado:hover  {
+    transform: scale(1.15);
+    cursor: pointer;
 }
 
 .certificado {
@@ -458,6 +471,17 @@ h2 {
     background-color: var(--cor-card2);
 }
 
+.titulo-projeto {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.titulo-projeto:hover {
+    transform: scale(1.05);
+}
+
 .btn-descricao-proj {
     background-color: var(--cor-card2);
     display: flex;
@@ -476,6 +500,7 @@ h2 {
     padding: 5px;
     font-size: 10px;
     transition: all 0.5s ease;
+    color: black;
 }
 
 .card-overlay {
@@ -503,7 +528,7 @@ h2 {
 }
 
 #projeto-1 {
-    background-image: url(../images/projeto-netflix.png);
+    background-image: url(../images/projeto-cicera.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
