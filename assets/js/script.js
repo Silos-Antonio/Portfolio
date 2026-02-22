@@ -85,8 +85,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Fecha todos os outros overlays abertos antes de abrir o novo (opcional, melhora a UX)
             document.querySelectorAll('.card-overlay').forEach(ov => ov.classList.remove('ativo'));
 
-            const cardPai = this.closest('.card-projeto');
-            const overlay = cardPai.querySelector('.card-overlay');
+            const projeto = this.closest('.projeto');
+            const card = projeto.querySelector('.card-projeto');
+            const overlay = card.querySelector('.card-overlay');
+
             overlay.classList.add('ativo');
         });
     });

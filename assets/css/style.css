@@ -5,10 +5,10 @@
 }
 
 :root {
-    --cor-fundo: #061024;
-    --cor-card: #0c2047;
-    --cor-card2: rgba(255, 255, 255, 0.219);
-    --cor-acento: #C8A23C;
+    --cor-fundo: #000000;
+    --cor-card: #272727bb;
+    --cor-card2: rgba(255, 255, 255, 0.336);
+    --cor-acento: #eb8500;
     --fonte-principal: 'Poppins', sans-serif;
     --fonte-negrito: 'Poppins', sans-serif, bold;
     --cor-fonte: rgb(201, 201, 201); 
@@ -23,7 +23,10 @@
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background-image: url("../images/imagem-fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: var(--fonte-principal);
     color: var(--cor-fonte);
     line-height: 1.6;
@@ -122,8 +125,6 @@ li {
     color: var(--cor-fonte);
 }
 
-
-
 .contato-icone {
     height: 50px;
     width: 50px;
@@ -151,6 +152,28 @@ main {
 
 h2 {
     font-size: 36px;
+}
+
+.link-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.rede1 {
+    border: solid 2px var(--cor-acento);
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 5px 5px 5px #eb85008a;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.rede1:hover {
+    transform: translateY(-8px) ;
+}
+
+.link-redes a {
+    text-decoration: none;
 }
 
 .oculto {
@@ -286,6 +309,10 @@ h2 {
     font-weight: bold;
 }
 
+.ferramentas {
+    margin-top: 40px;
+}
+
 .ferramentas-lista {
     display: Flex;
     gap: 10px;
@@ -418,12 +445,12 @@ h2 {
 .imagem-certificado {
     width: 300px;
     height: 200px;
-    box-shadow: #000000 10px 10px 5px 0;
     transition: transform 0.3s ease;
 }
 
 .imagem-certificado:hover  {
     transform: scale(1.15);
+    box-shadow: #ff7b0098 3px 10px 15px 5px;
     cursor: pointer;
 }
 
@@ -454,25 +481,35 @@ h2 {
 
 .lista-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    max-height: 450px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    overflow-x: auto;
     gap: 30px;
     padding: 20px;
     justify-content: center;
 }
 
+.projeto {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+
 .card-projeto {
     position: relative;
-    width: 340px;
-    height: 170px;
+    width: 450px;
+    height: 270px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: #000000 10px 5px 5px 0;
+    box-shadow: #ff7b00 5px 5px 5px 0;
     padding: 5px;
     background-color: var(--cor-card2);
 }
 
 .titulo-projeto {
     background: rgba(0, 0, 0, 0.5);
+    max-width: 200px;
+    max-height: 100px;
     padding: 10px;
     transition: transform 0.5s ease-in-out;
     border-radius: 10px;
@@ -525,6 +562,11 @@ h2 {
 .card-overlay.ativo {
    transform: translateX(0);
     pointer-events: auto; /* Reativa os cliques quando visível */
+}
+
+.card-overlay img {
+    height: 50px;
+    width: 50px;
 }
 
 #projeto-1 {
@@ -736,6 +778,11 @@ button:active {
         display: block;
     }
 
+    .link-redes {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .barra-navegacao {
         width: 100%;
         border-radius: 10px;
@@ -752,6 +799,7 @@ button:active {
         border-radius: 10px;
         padding: 15px;
         cursor: pointer;
+        margin-bottom: -10px;
     }
 
     .lista-navegacao {
@@ -783,8 +831,16 @@ button:active {
     }
 
     .lista-projetos {
-        grid-template-columns: 1ft;
+        grid-template-columns: 1fr;
+        padding: 20px;
         justify-items: center;
+    }
+
+    .projeto {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        width: 380px;
     }
 
     form textarea {
@@ -806,8 +862,19 @@ button:active {
 
     .card-projeto {
         width: 100%;
-        max-width: 380px;
-        height: 200px;
+        max-width: 100%px;
+        height: 220px;
+    }
+
+    .cabecalho-projeto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-descricao-proj {
+        width: 160px;
+        height: 35px;
+        font-size: 12px;
     }
 
     .descricao-xp {
