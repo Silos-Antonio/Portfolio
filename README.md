@@ -15,11 +15,12 @@ Status do Projeto
 Concluído, mas em constante melhoria.
 
 Como Visualizar
-Acesse o link: https://silos-antonio.github.io/Portfolio/
+Acesse o link: PROJETO EM MIGRAÇÃO. 
 
 Autor
 Antonio Silos
 
 LinkedIn: linkedin.com/in/antonio-silos-415b64175
 Github: https://github.com/Silos-Antonio
+
 
