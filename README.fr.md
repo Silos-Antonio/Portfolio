@@ -1,5 +1,5 @@
 # 🌐 Portfolio Personnel — Antonio Silos
-🇫🇷 [Français] | 🇧🇷 Português [Português](README.md)
+🇫🇷 [Français] | 🇧🇷 [Português](README.md)
 ## 📌 À propos du projet
 
 Ce projet représente mon portfolio personnel, développé avec un souci particulier de structure, performance et respect des bonnes pratiques du développement front-end.
