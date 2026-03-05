@@ -24,9 +24,10 @@
 
 body {
     background-image: url("../images/imagem-fundo.png");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     font-family: var(--fonte-principal);
     color: var(--cor-fonte);
     line-height: 1.6;
@@ -181,11 +182,14 @@ h2 {
 }
 
 .barra-navegacao {
+    font-family: var(--fonte-negrito);
     background-color: var(--cor-card2);
+    font-size: 1.1rem;
+    font-style: italic;
     position: fixed;
     top: 0;
     right: 0;
-    width: 500px;
+    width: 550px;
     border-radius: 0 0 0 10px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px 0;
     z-index: 15;
@@ -194,7 +198,7 @@ h2 {
 .lista-navegacao {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0;
 }
 
 .lista-navegacao a {
@@ -675,23 +679,94 @@ form textarea {
 }
 
 button:hover {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     background-color:var(--cor-card2);
     color: hsl(0, 0%, 100%);
     box-shadow: var(--cor-fundo) 0px 7px 29px 0px;
     }
 
 button:active {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     background-color: var(--cor-card);
     color: hsl(0, 0%, 100%);
     box-shadow: var(--cor-card) 0px 0px 0px 0px;
-    transform: translateY(10px);
+    transform: translateY(2px);
     transition: 100ms;
     }
 
 .botao-contato-mobile {
     display: none;
+}
+
+.menu-traducao {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-card);
+    background-color: rgba(71, 71, 71, 0.678);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap-reverse;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.menu-traducao:hover {
+    width: 160px;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.menu-traducao i {
+    font-size: 2.2rem;
+    margin-top: 0;
+    min-width: 40px;
+    text-align: center;
+}
+.menu-traducao span i {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+.lang-btn {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3 ease;
+    gap: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu-traducao:hover .lang-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lang-btn button {
+    background: none;
+    border: none;
+    padding: 10px; /* Aumenta a área de clique interna */
+    cursor: pointer;
+
+}
+
+.lang-btn button:active {
+    transform: translateY(1px); /* Um movimento menor para não perder o foco do clique */
+    transition: 100ms;
 }
 
 @media screen and (max-width: 850px) {
@@ -823,6 +898,7 @@ button:active {
         margin: 5px 0;
         border-radius: 8px;
         width: 100%;
+        padding: 10px;
         text-align: center;
     }
 
